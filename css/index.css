@@ -1,0 +1,57 @@
+html {
+    font-size: 1.1vw;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1vw;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 3vw;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 5vw;
+    }
+}
+
+html * {
+    color: #323436;
+}
+
+.color1 {
+    background-color: #4cbaa6;
+}
+
+.color2 {
+    background-color:#efc94c;
+}
+
+.color3 {
+    background-color: #324c5d;
+}
+
+.color4 {
+    background-color: #E3793F;
+}
+
+.color5 {
+    background-color: #DF494A;
+}
+
+.color-text{
+    color: #4b4d4f !important;
+}
+
+.px100 {
+    height: 100px;
+}
+
+
+
+
