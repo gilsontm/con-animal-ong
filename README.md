@@ -1,2 +1,2 @@
 # con-animal-ong
-Diretório destinado ao projeto da ONG Con Animal
+Diretório destinado ao projeto da ONG Con Animal.
