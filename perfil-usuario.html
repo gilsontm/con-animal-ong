@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Con Animal</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script src="js/jquery-3.1.1.min.js"> </script>
+    <script src="js/utils.js"> </script>
+    <script src="js/tether.js"> </script>
+    <script src="js/tether.js"> </script>
+    <script src="js/bootstrap.min.js"> </script>
+
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <!-- HEADER -->
+    <!-- Barra superior -->
+    <div class="container-fluid color3 mb-4 py-1 row">
+        <!-- Menu superior -->
+        <div class="col-6 offset-2">
+            <nav class="nav">
+                <a href="index.html" class="text-white nav-link"> Home </a>
+                <a href="#" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Estatuto </a>
+                <a href="#" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Legislação </a>
+                <a href="index.html" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Animais para adoção </a>
+            </nav>
+        </div>
+
+        <!-- Perfil de usuário -->
+        <div class="col-4">
+            <div class="btn-group float-right mr-5">
+                <button type="button" class="btn btn-danger dropdown-toggle px-3 m-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Olá, Gilson
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Perfil</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Sair</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- CONTENT -->
+    <div class="container my-5">
+        <div class="jumbotron jumbotron-fluid pt-4">
+            <div class="container-fluid w-100">
+                <h1 class="display-4 px-4 mt-0"> Painel de Usuário </h1>
+                <hr>
+                <div class="row w-100">
+                    <!-- Formulário para atualização de informações -->
+                    <div class="col-6">
+                        <form class="w-100 px-4 py-3">
+                            <div class="form-group row">
+                                <label for="p_name_input" class="col-3 col-form-label"> Nome </label>
+                                <div class="col-9">
+                                    <input type="text" id="p_name_input" class="form-control" value="Gilson Trombetta Magro">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="p_email_input" class="col-3 col-form-label"> Email </label>
+                                <div class="col-9">
+                                    <input type="email" id="p_email_input" class="form-control" value="gilson.t.magro@gmail.com">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="p_profession_input" class="col-3 col-form-label"> Profissão </label>
+                                <div class="col-9">
+                                    <input type="text" id="p_profession_input" class="form-control" value="Estudante">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="p_rg_input" class="col-3 col-form-label"> RG </label>
+                                <div class="col-9">
+                                    <input type="tel" id="p_rg_input" class="form-control" value="1234567" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="p_cpf_input" class="col-3 col-form-label"> CPF </label>
+                                <div class="col-9">
+                                    <input type="tel" id="p_cpf_input" class="form-control" value="12345678910" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="p_phone_input" class="col-3 col-form-label"> Telefone </label>
+                                <div class="col-9">
+                                    <input type="tel" id="p_phone_input" class="form-control" value="4912345678">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="p_cell_input" class="col-3 col-form-label"> Celular </label>
+                                <div class="col-9">
+                                    <input type="tel" id="p_cell_input" class="form-control" value="4912345678">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="p_city_input" class="col-3 col-form-label"> Município </label>
+                                <div class="col-9">
+                                    <input type="text" id="p_city_input" class="form-control" value="Concórdia">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="p_uf_input" class="col-3 col-form-label"> UF </label>
+                                <div class="col-9">
+                                    <input type="text" id="p_uf_input" class="form-control" value="SC" maxlength="2">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="p_neighborhood_input" class="col-3 col-form-label"> Bairro </label>
+                                <div class="col-9">
+                                    <input type="text" id="p_neighborhood_input" class="form-control" value="Imperial">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="p_street_input" class="col-3 col-form-label"> Rua </label>
+                                <div class="col-9">
+                                    <input type="text" id="p_street_input" class="form-control" value="Marcelino Ramos">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="p_complement_input" class="col-3 col-form-label"> Complemento </label>
+                                <div class="col-9">
+                                    <input type="text" id="p_complement_input" class="form-control" value="Casa, Nº 1080.">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="p_payment_input" class="col-7 col-form-label"> Quanto contribuirá mensalmente? </label>
+                                <div class="input-group col-5">
+                                    <span class="input-group-addon">R$</span>
+                                    <input type="number" id="p_payment_input" class="form-control" value="20">
+                                    <span class="input-group-addon">,00</span>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" id="p_authorized_name_publishing_checkbox" checked="true">
+                                    Autorizo a divulgação do meu nome no quadro associativo.
+                                </label>
+                            </div>
+
+                            <button type="submit" id="p_submit_button" class="btn btn-block btn-danger mt-4"> Atualizar informações </button>
+                        </form>
+                    </div>
+                    <!-- Formulário para alteração de senha -->
+                    <div class="col-6">
+                        <form class="w-100 px-4 py-3">
+                            <div class="form-group row">
+                                <label for="p_password_input" class="col-form-label col-3"> Senha atual </label>
+                                <div class="col-9">
+                                    <input type="password" id="p_old_password_input" class="form-control" placeholder="Digite a senha atual">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="p_password_input" class="col-form-label col-3"> Nova senha </label>
+                                <div class="col-9">
+                                    <input type="password" id="p_password_input" class="form-control" placeholder="Digite a nova senha">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="p_confirm_password_input" class="col-form-label col-3"> Confirmação </label>
+                                <div class="col-9">
+                                    <input type="password" id="p_confirm_password_input" class="form-control" placeholder="Digite a senha novamente">
+                                </div>
+                            </div>
+
+                            <button type="submit" id="p_password_submit_button" class="btn btn-block btn-danger mt-4 w-100"> Alterar senha </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</body>
+</html>
