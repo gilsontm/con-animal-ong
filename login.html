@@ -26,8 +26,8 @@
         <div class="col-6 offset-2">
             <nav class="nav">
                 <a href="index.html" class="text-white nav-link"> Home </a>
-                <a href="#" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Estatuto </a>
-                <a href="#" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Legislação </a>
+                <a href="estatuto.html" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Estatuto </a>
+                <a href="legislacao.html" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Legislação </a>
                 <a href="index.html" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Animais para adoção </a>
             </nav>
         </div>
@@ -42,15 +42,43 @@
     <!-- END HEADER -->
 
     <!-- CONTENT -->
-    <div class="container-fluid my-5 justify-content-center d-flex">
-        <div class="card color3 my-5 py-2 rounded w-25">
-            <form class="w-100 p-5">
-                <input type="text" class="form-control my-2" placeholder="Nome de usuário">
-                <input type="password" class="form-control my-2" placeholder="Senha">
-                <a href="#" class="text-white"> Esqueceu sua senha? </a>
-                <button type="submit" class="btn btn-block rounded btn-danger float-right mt-3"> Entrar </button>
-            </form>
+    <div class="container-fluid my-5">
+        <div class="row mb-0">
+            <div class="col-4 offset-4">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#login_tab" role="tab"> Login </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#recover_password_tab" role="tab"> Recuperar senha </a>
+                    </li>
+                </ul>
+            </div>
         </div>
+        <div class="row mt-0">
+            <div class="col-4 offset-4 tab-content">
+                <div class="tab-pane fade show active" id="login_tab">
+                    <div class="card color3 p-5 rounded">
+                        <form>
+                            <input type="email" id="login_email_input" class="form-control my-2" placeholder="Email">
+                            <input type="password" id="login_password_input" class="form-control my-2" placeholder="Senha">
+                            <a data-toggle="tab" href="#recover_password_tab" class="text-white"> Esqueceu sua senha? </a>
+                            <button type="submit" id="login_submit_input" class="btn btn-block rounded btn-danger mt-3"> Entrar </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id="recover_password_tab">
+                    <div class="card color3 p-5 rounded">
+                        <form>
+                            <input type="email" id="recover_password_email_input" class="form-control my-2" placeholder="Email">
+                            <button type="submit" id="recover_password_submit_input" class="btn btn-block rounded btn-danger mt-3"> Enviar email de recuperação </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <!-- END CONTENT -->
 

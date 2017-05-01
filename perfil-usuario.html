@@ -26,8 +26,8 @@
         <div class="col-6 offset-2">
             <nav class="nav">
                 <a href="index.html" class="text-white nav-link"> Home </a>
-                <a href="#" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Estatuto </a>
-                <a href="#" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Legislação </a>
+                <a href="estatuto.html" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Estatuto </a>
+                <a href="legislacao.html" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Legislação </a>
                 <a href="index.html" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Animais para adoção </a>
             </nav>
         </div>
@@ -57,121 +57,146 @@
                 <div class="row w-100">
                     <!-- Formulário para atualização de informações -->
                     <div class="col-6">
-                        <form class="w-100 px-4 py-3">
-                            <div class="form-group row">
-                                <label for="p_name_input" class="col-3 col-form-label"> Nome </label>
-                                <div class="col-9">
-                                    <input type="text" id="p_name_input" class="form-control" value="Gilson Trombetta Magro">
+                        <div class="my-5">
+                            <h3> Alterar informações gerais </h3>
+                            <hr>
+                            <form class="w-100 px-4 py-3">
+                                <div class="form-group row">
+                                    <label for="p_name_input" class="col-3 col-form-label"> Nome </label>
+                                    <div class="col-9">
+                                        <input type="text" id="p_name_input" class="form-control" value="Gilson Trombetta Magro">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="p_email_input" class="col-3 col-form-label"> Email </label>
-                                <div class="col-9">
-                                    <input type="email" id="p_email_input" class="form-control" value="gilson.t.magro@gmail.com">
+                                <div class="form-group row">
+                                    <label for="p_email_input" class="col-3 col-form-label"> Email </label>
+                                    <div class="col-9">
+                                        <input type="email" id="p_email_input" class="form-control" value="gilson.t.magro@gmail.com">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="p_profession_input" class="col-3 col-form-label"> Profissão </label>
-                                <div class="col-9">
-                                    <input type="text" id="p_profession_input" class="form-control" value="Estudante">
+                                <div class="form-group row">
+                                    <label for="p_profession_input" class="col-3 col-form-label"> Profissão </label>
+                                    <div class="col-9">
+                                        <input type="text" id="p_profession_input" class="form-control" value="Estudante">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="p_rg_input" class="col-3 col-form-label"> RG </label>
-                                <div class="col-9">
-                                    <input type="tel" id="p_rg_input" class="form-control" value="1234567" disabled>
+                                <div class="form-group row">
+                                    <label for="p_rg_input" class="col-3 col-form-label"> RG </label>
+                                    <div class="col-9">
+                                        <input type="tel" id="p_rg_input" class="form-control" value="1234567" disabled>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="p_cpf_input" class="col-3 col-form-label"> CPF </label>
-                                <div class="col-9">
-                                    <input type="tel" id="p_cpf_input" class="form-control" value="12345678910" disabled>
+                                <div class="form-group row">
+                                    <label for="p_cpf_input" class="col-3 col-form-label"> CPF </label>
+                                    <div class="col-9">
+                                        <input type="tel" id="p_cpf_input" class="form-control" value="12345678910" disabled>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="p_phone_input" class="col-3 col-form-label"> Telefone </label>
-                                <div class="col-9">
-                                    <input type="tel" id="p_phone_input" class="form-control" value="4912345678">
+                                <div class="form-group row">
+                                    <label for="p_phone_input" class="col-3 col-form-label"> Telefone </label>
+                                    <div class="col-9">
+                                        <input type="tel" id="p_phone_input" class="form-control" value="4912345678">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="p_cell_input" class="col-3 col-form-label"> Celular </label>
-                                <div class="col-9">
-                                    <input type="tel" id="p_cell_input" class="form-control" value="4912345678">
+                                <div class="form-group row">
+                                    <label for="p_cell_input" class="col-3 col-form-label"> Celular </label>
+                                    <div class="col-9">
+                                        <input type="tel" id="p_cell_input" class="form-control" value="4912345678">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="p_city_input" class="col-3 col-form-label"> Município </label>
-                                <div class="col-9">
-                                    <input type="text" id="p_city_input" class="form-control" value="Concórdia">
+                                <div class="form-group row">
+                                    <label for="p_city_input" class="col-3 col-form-label"> Município </label>
+                                    <div class="col-9">
+                                        <input type="text" id="p_city_input" class="form-control" value="Concórdia">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="p_uf_input" class="col-3 col-form-label"> UF </label>
-                                <div class="col-9">
-                                    <input type="text" id="p_uf_input" class="form-control" value="SC" maxlength="2">
+                                <div class="form-group row">
+                                    <label for="p_uf_input" class="col-3 col-form-label"> UF </label>
+                                    <div class="col-9">
+                                        <input type="text" id="p_uf_input" class="form-control" value="SC" maxlength="2">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="p_neighborhood_input" class="col-3 col-form-label"> Bairro </label>
-                                <div class="col-9">
-                                    <input type="text" id="p_neighborhood_input" class="form-control" value="Imperial">
+                                <div class="form-group row">
+                                    <label for="p_neighborhood_input" class="col-3 col-form-label"> Bairro </label>
+                                    <div class="col-9">
+                                        <input type="text" id="p_neighborhood_input" class="form-control" value="Imperial">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="p_street_input" class="col-3 col-form-label"> Rua </label>
-                                <div class="col-9">
-                                    <input type="text" id="p_street_input" class="form-control" value="Marcelino Ramos">
+                                <div class="form-group row">
+                                    <label for="p_street_input" class="col-3 col-form-label"> Rua </label>
+                                    <div class="col-9">
+                                        <input type="text" id="p_street_input" class="form-control" value="Marcelino Ramos">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="p_complement_input" class="col-3 col-form-label"> Complemento </label>
-                                <div class="col-9">
-                                    <input type="text" id="p_complement_input" class="form-control" value="Casa, Nº 1080.">
+                                <div class="form-group row">
+                                    <label for="p_complement_input" class="col-3 col-form-label"> Complemento </label>
+                                    <div class="col-9">
+                                        <input type="text" id="p_complement_input" class="form-control" value="Casa, Nº 1080.">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="p_payment_input" class="col-7 col-form-label"> Quanto contribuirá mensalmente? </label>
-                                <div class="input-group col-5">
-                                    <span class="input-group-addon">R$</span>
-                                    <input type="number" id="p_payment_input" class="form-control" value="20">
-                                    <span class="input-group-addon">,00</span>
+                                <div class="form-group row">
+                                    <label for="p_payment_input" class="col-7 col-form-label"> Quanto contribuirá mensalmente? </label>
+                                    <div class="input-group col-5">
+                                        <span class="input-group-addon">R$</span>
+                                        <input type="number" id="p_payment_input" class="form-control" value="20">
+                                        <span class="input-group-addon">,00</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="checkbox" class="form-check-input" id="p_authorized_name_publishing_checkbox" checked="true">
-                                    Autorizo a divulgação do meu nome no quadro associativo.
-                                </label>
-                            </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" id="p_authorized_name_publishing_checkbox" checked="true">
+                                        Autorizo a divulgação do meu nome no quadro associativo.
+                                    </label>
+                                </div>
 
-                            <button type="submit" id="p_submit_button" class="btn btn-block btn-danger mt-4"> Atualizar informações </button>
-                        </form>
+                                <button type="submit" id="p_submit_button" class="btn btn-block btn-danger mt-4"> Atualizar informações </button>
+                            </form>
+                        </div>
+
                     </div>
                     <!-- Formulário para alteração de senha -->
                     <div class="col-6">
-                        <form class="w-100 px-4 py-3">
-                            <div class="form-group row">
-                                <label for="p_password_input" class="col-form-label col-3"> Senha atual </label>
-                                <div class="col-9">
-                                    <input type="password" id="p_old_password_input" class="form-control" placeholder="Digite a senha atual">
+                        <div class="my-5">
+                            <h3> Alterar senha </h3>
+                            <hr>
+                            <form class="w-100 px-4 py-3">
+                                <div class="form-group row">
+                                    <label for="p_password_input" class="col-form-label col-3"> Senha atual </label>
+                                    <div class="col-9">
+                                        <input type="password" id="p_old_password_input" class="form-control" placeholder="Digite a senha atual">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="p_password_input" class="col-form-label col-3"> Nova senha </label>
-                                <div class="col-9">
-                                    <input type="password" id="p_password_input" class="form-control" placeholder="Digite a nova senha">
+                                <div class="form-group row">
+                                    <label for="p_password_input" class="col-form-label col-3"> Nova senha </label>
+                                    <div class="col-9">
+                                        <input type="password" id="p_password_input" class="form-control" placeholder="Digite a nova senha">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="p_confirm_password_input" class="col-form-label col-3"> Confirmação </label>
-                                <div class="col-9">
-                                    <input type="password" id="p_confirm_password_input" class="form-control" placeholder="Digite a senha novamente">
+                                <div class="form-group row">
+                                    <label for="p_confirm_password_input" class="col-form-label col-3"> Confirmação </label>
+                                    <div class="col-9">
+                                        <input type="password" id="p_confirm_password_input" class="form-control" placeholder="Digite a senha novamente">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <button type="submit" id="p_password_submit_button" class="btn btn-block btn-danger mt-4 w-100"> Alterar senha </button>
-                        </form>
+                                <button type="submit" id="p_password_submit_button" class="btn btn-block btn-danger mt-4 w-100"> Alterar senha </button>
+                            </form>
+                        </div>
+
+                        <div class="my-5">
+                            <h3> Desativar minha conta </h3>
+                            <hr>
+
+                            <form class="w-100 px-4 py-3">
+                                <div class="form-group row">
+                                    <label for="deactivation_password_input" class="col-form-label col-3"> Nova senha </label>
+                                    <div class="col-9">
+                                        <input type="password" id="deactivation_password_input" class="form-control" placeholder="Senha">
+                                    </div>
+                                </div>
+
+                                <button type="submit" id="deactivation_submit_button" class="btn btn-block btn-danger mt-4 w-100"> Desativar conta </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
 

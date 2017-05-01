@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Con Animal</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script src="js/jquery-3.1.1.min.js"> </script>
+    <script src="js/utils.js"> </script>
+    <script src="js/tether.js"> </script>
+    <script src="js/tether.js"> </script>
+    <script src="js/bootstrap.min.js"> </script>
+
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <!-- HEADER -->
+    <!-- Barra superior -->
+    <div class="container-fluid color3 mb-4 py-1 row">
+        <!-- Menu superior -->
+        <div class="col-6 offset-2">
+            <nav class="nav">
+                <a href="index.html" class="text-white nav-link"> Home </a>
+                <a href="estatuto.html" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Estatuto </a>
+                <a href="legislacao.html" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Legislação </a>
+                <a href="index.html" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Animais para adoção </a>
+            </nav>
+        </div>
+
+        <!-- Perfil de usuário -->
+        <div class="col-4">
+            <div class="btn-group float-right mr-5">
+                <button type="button" class="btn btn-danger dropdown-toggle px-3 m-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Olá, Gilson
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="perfil-usuario.html">Perfil</a>
+                    <a class="dropdown-item" href="painel-admin.html">Painel de administrador</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Sair</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- CONTENT -->
+    <div class="container my-5">
+        <div class="jumbotron jumbotron-fluid pt-4">
+            <div class="container-fluid w-100">
+                <h1 class="display-4 px-4 mt-0"> Visualização de animal para adoção </h1>
+                <hr>
+                <div class="w-100 row">
+                    <div class="col-6">
+                        <div class="my-5">
+                            <form class="w-100 px-4 py-3">
+                                <div class="form-group row">
+                                    <label for="animals_title_input" class="col-3 col-form-label"> Título* </label>
+                                    <div class="col-9">
+                                        <input type="text" id="animals_title_input" class="form-control" value="Cachorro macho raça desconhecida">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="animals_description_input"> Descrição* </label>
+                                    <textarea id="animals_description_input" class="form-control" rows="5" maxlength="500" aria-describedby="animals_description_description"> Cachorro macho, raça desconhecida, precisa de um lar. </textarea>
+                                    <small id="animals_description_description"> Limite de 500 caracteres.</small>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="animals_user_input" class="col-3 col-form-label"> Usuário* </label>
+                                    <div class="col-9">
+                                        <input type="text" id="animals_user_input" class="form-control" value="Gilson" disabled>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="animals_date_input" class="col-3 col-form-label"> Data* </label>
+                                    <div class="col-9">
+                                        <input type="text" id="animals_date_input" class="form-control" value="18:06 04/04/2017" disabled>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="animals_primary_image_input" class="col-3 col-form-label"> Imagem 1* </label>
+                                    <div class="col-9">
+                                        <input type="file" id="animals_primary_image_input" class="form-control-file">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="animals_image_2_input" class="col-3 col-form-label"> Imagem 2 </label>
+                                    <div class="col-9">
+                                        <input type="file" id="animals_image_2_input" class="form-control-file">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="animals_image_3_input" class="col-3 col-form-label"> Imagem 3 </label>
+                                    <div class="col-9">
+                                        <input type="file" id="animals_image_3_input" class="form-control-file">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="animals_image_4_input" class="col-3 col-form-label"> Imagem 4 </label>
+                                    <div class="col-9">
+                                        <input type="file" id="animals_image_4_input" class="form-control-file">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-left">
+                                    <div class="form-check mr-3">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                            Adotado
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                            Ocultado
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button type="submit" id="accountability_submit_input" class="btn btn-block btn-danger mt-4"> Atualizar informações </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="my-5">
+                            <h5> Imagem principal </h5>
+                            <hr>
+                            <img src="images/a.jpg" class="img-thumbnail mx-1 w-50">
+                        </div>
+                        <div class="my-5">
+                            <h5> Imagens secundárias </h5>
+                            <hr>
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="images/a.jpg" class="img-thumbnail mx-1">
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/a.jpg" class="img-thumbnail mx-1">
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/a.jpg" class="img-thumbnail mx-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</body>
+</html>
