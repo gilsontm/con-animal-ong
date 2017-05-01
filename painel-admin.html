@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Con Animal</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script src="js/jquery-3.1.1.min.js"> </script>
+    <script src="js/utils.js"> </script>
+    <script src="js/tether.js"> </script>
+    <script src="js/tether.js"> </script>
+    <script src="js/bootstrap.min.js"> </script>
+
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <!-- HEADER -->
+    <!-- Barra superior -->
+    <div class="container-fluid color3 mb-4 py-1 row">
+        <!-- Menu superior -->
+        <div class="col-6 offset-2">
+            <nav class="nav">
+                <a href="index.html" class="text-white nav-link"> Home </a>
+                <a href="#" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Estatuto </a>
+                <a href="#" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Legislação </a>
+                <a href="index.html" class="text-white nav-link border-top-0 border-bottom-0 border-right-0 table-bordered"> Animais para adoção </a>
+            </nav>
+        </div>
+
+        <!-- Perfil de usuário -->
+        <div class="col-4">
+            <div class="btn-group float-right mr-5">
+                <button type="button" class="btn btn-danger dropdown-toggle px-3 m-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Olá, Gilson
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="perfil-usuario.html">Perfil</a>
+                    <a class="dropdown-item" href="painel-admin.html">Painel de administrador</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Sair</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- CONTENT -->
+    <div class="container my-5">
+        <div class="jumbotron jumbotron-fluid pt-4">
+            <div class="container-fluid w-100">
+                <h1 class="display-4 px-4 mt-0"> Painel de Administrador </h1>
+                <hr>
+                <!-- Instruções de uso -->
+                <div class="px-4 mt-5">
+                    <h3> Instruções de uso </h3>
+                    <hr>
+                    <ul>
+                        <li> Cada título representa uma seção independente, que pode ser alterada sem que haja alterações nas outras seções. </li>
+                        <li> Campos marcados com * são de preenchimento obrigatório.</li>
+                        <li> As alterações realizadas por cada administrador poderão ser visualizadas pelos outros administradores. </li>
+                    </ul>
+                </div>
+
+                <div class="row px-4">
+                    <div class="col-6">
+                        <!-- Cadastrar novo animal para adoção -->
+                        <div class="my-5">
+                            <h3> Cadastrar novo animal para adoção </h3>
+                            <hr>
+                            <form>
+                                <div class="form-group row">
+                                    <label for="animals_title_input" class="col-3 col-form-label"> Título* </label>
+                                    <div class="col-9">
+                                        <input type="text" id="animals_title_input" class="form-control" maxlength="50" placeholder="Título do animal para adoção">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="animals_description_input"> Descrição* </label>
+                                    <textarea id="animals_description_input" class="form-control" rows="5" maxlength="500" aria-describedby="animals_description_description"> </textarea>
+                                    <small id="animals_description_description"> Limite de 500 caracteres.</small>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="animals_primary_image_input" class="col-3 col-form-label"> Imagem 1* </label>
+                                    <div class="col-9">
+                                        <input type="file" id="animals_primary_image_input" class="form-control-file">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="animals_image_2_input" class="col-3 col-form-label"> Imagem 2 </label>
+                                    <div class="col-9">
+                                        <input type="file" id="animals_image_2_input" class="form-control-file">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="animals_image_3_input" class="col-3 col-form-label"> Imagem 3 </label>
+                                    <div class="col-9">
+                                        <input type="file" id="animals_image_3_input" class="form-control-file">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="animals_image_4_input" class="col-3 col-form-label"> Imagem 4 </label>
+                                    <div class="col-9">
+                                        <input type="file" id="animals_image_4_input" class="form-control-file">
+                                    </div>
+                                </div>
+                                <button type="submit" id="animals_submit_button" class="btn btn-block btn-danger mt-4"> Cadastrar animal para adoção </button>
+                            </form>
+                        </div>
+                        <!-- Cadastrar nova notícia -->
+                        <div class="my-5">
+                            <h3> Cadastrar nova notícia</h3>
+                            <hr>
+                            <form>
+                                <div class="form-group row">
+                                    <label for="news_title_input" class="col-3 col-form-label"> Título* </label>
+                                    <div class="col-9">
+                                        <input type="text" id="news_title_input" class="form-control" maxlength="50" placeholder="Título da notícia">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="news_description_input"> Descrição* </label>
+                                    <textarea id="news_description_input" class="form-control" rows="5" maxlength="500" aria-describedby="news_description_description"> </textarea>
+                                    <small id="news_description_description"> Limite de 500 caracteres.</small>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="news_image_1_input" class="col-3 col-form-label"> Imagem 1 </label>
+                                    <div class="col-9">
+                                        <input type="file" id="news_image_1_input" class="form-control-file">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="news_image_2_input" class="col-3 col-form-label"> Imagem 2 </label>
+                                    <div class="col-9">
+                                        <input type="file" id="news_image_2_input" class="form-control-file">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="news_image_3_input" class="col-3 col-form-label"> Imagem 3 </label>
+                                    <div class="col-9">
+                                        <input type="file" id="news_image_3_input" class="form-control-file">
+                                    </div>
+                                </div>
+                                <button type="submit" id="news_submit_button" class="btn btn-block btn-danger mt-4"> Cadastrar notícia </button>
+                            </form>
+                        </div>
+                        <!-- Formulário para alterar seção de parceiros da ONG -->
+                        <div class="my-5">
+                            <h3> Alterar seção de parceiros da ONG </h3>
+                            <hr>
+
+                            <!-- Lista de parceiros cadastrados -->
+                            <ul class="list-group mt-0 mb-4">
+                                <li class="list-group-item color3 text-white"> Parceiros cadastrados</li>
+                                <li class="list-group-item d-flex justify-content-between">
+                                    Nome do parceiro
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between">
+                                    Nome do parceiro
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between">
+                                    Nome do parceiro
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </li>
+                            </ul>
+
+                            <!-- Formulário para cadastrar novo parceiro -->
+                            <h5> Cadastrar novo parceiro </h5>
+                            <hr>
+                            <form>
+                                <div class="form-group row">
+                                    <label for="partner_name_input" class="col-3 col-form-label"> Nome* </label>
+                                    <div class="col-9">
+                                        <input type="text" id="partner_name_input" class="form-control" placeholder="Digite o nome do parceiro">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="partner_image_input" class="col-form-label col-3"> Logomarca* </label>
+                                    <div class="col-9">
+                                        <input type="file" id="partner_image_input" class="form-control-file">
+                                    </div>
+                                </div>
+                                <button type="submit" id="partner_submit_button" class="btn btn-block btn-danger mt-4"> Cadastrar parceiro e atualizar informações </button>
+                            </form>
+                        </div>
+                        <!-- Formulário para alterar informações de contatos úteis -->
+                        <div class="my-5">
+                            <h3> Alterar informações de contatos úteis </h3>
+                            <hr>
+                            <form>
+                                <div class="form-group row">
+                                    <label for="contact_email_input" class="col-3 col-form-label"> Email* </label>
+                                    <div class="col-9">
+                                        <input type="email" id="contact_email_input" class="form-control" value="conanimal@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="contact_facebook_input" class="col-3 col-form-label"> Facebook* </label>
+                                    <div class="col-9">
+                                        <input type="text" id="contact_facebook_input" class="form-control" value="www.facebook.com/ongconanimal">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="contact_link1_input" class="col-3 col-form-label"> Link útil 1 </label>
+                                    <div class="col-9">
+                                        <input type="text" id="contact_link1_input" class="form-control" value="www.uipa.org.br">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="contact_link2_input" class="col-3 col-form-label"> Link útil 2 </label>
+                                    <div class="col-9">
+                                        <input type="text" id="contact_link2_input" class="form-control" value="www.amparaanimal.org.br">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="contact_link3_input" class="col-3 col-form-label"> Link útil 3 </label>
+                                    <div class="col-9">
+                                        <input type="text" id="contact_link3_input" class="form-control" placeholder="Adicione um link">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="contact_link4_input" class="col-3 col-form-label"> Link útil 4 </label>
+                                    <div class="col-9">
+                                        <input type="text" id="contact_link4_input" class="form-control" placeholder="Adicione um link">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="contact_link5_input" class="col-3 col-form-label"> Link útil 5 </label>
+                                    <div class="col-9">
+                                        <input type="text" id="contact_link5_input" class="form-control" placeholder="Adicione um link">
+                                    </div>
+                                </div>
+
+                                <button type="submit" id="contact_submit_button" class="btn btn-block btn-danger mt-4"> Atualizar informações </button>
+                            </form>
+                        </div>
+                        <!-- Alterar imagens da página inicial -->
+                        <div class="my-5">
+                            <h3> Alterar imagens da página inicial </h3>
+                            <hr>
+                            <!-- Lista das imagens atuais -->
+                            <ul class="list-group mt-0 mb-4">
+                                <li class="list-group-item color3 text-white"> Imagens cadastradas</li>
+                                <li class="list-group-item d-flex justify-content-between">
+                                    Nome da imagem
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between">
+                                    Nome da imagem
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between">
+                                    Nome da imagem
+                                    <button type="button" class="close" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </li>
+                            </ul>
+
+                            <!-- Cadastrar nova imagem -->
+                            <h5> Cadastrar nova imagem </h5>
+                            <hr>
+                            <!-- Cadastrar nova imagem para a página inicial -->
+                            <form>
+                                <div class="form-group row">
+                                    <label for="main_image_name_input" class="col-3 col-form-label"> Nome* </label>
+                                    <div class="col-9">
+                                        <input type="text" id="main_image_name_input" class="form-control" placeholder="Digite um nome para a imagem">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="main_image_input" class="col-form-label col-3"> Imagem* </label>
+                                    <div class="col-9">
+                                        <input type="file" id="main_image_input" class="form-control-file">
+                                    </div>
+                                </div>
+                                <button type="submit" id="main_image_submit_button" class="btn btn-block btn-danger mt-4"> Cadastrar imagem e atualizar informações </button>
+                            </form>
+                        </div>
+                        <!-- Alterar slogan -->
+                        <div class="my-5">
+                            <h3> Alterar slogan da página principal </h3>
+                            <hr>
+                            <form>
+                                <div class="form-group row">
+                                    <label for="slogan_text_input" class="col-form-label col-3"> Slogan* </label>
+                                    <div class="col-9">
+                                        <input type="text" id="slogan_text_input" class="form-control" maxlength="55" value="Porque o seu melhor amigo merece muito carinho!">
+                                    </div>
+                                </div>
+
+                                <button type="submit" id="slogan_submit_input" class="btn btn-block btn-danger mt-4"> Alterar slogan </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <!-- Lista de usuários -->
+                        <div class="my-5">
+                            <h3> Lista de usuários </h3>
+                            <hr>
+                            <a class="btn btn-block color3 text-white my-1" href="#admin_collapse" data-toggle="collapse" aria-expanded="false" aria-controls="admin_collapse">
+                                Administradores
+                            </a>
+                            <div class="collapse" id="admin_collapse">
+                                <ul class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action"> Nome do administrador </a>
+                                    <a href="#" class="list-group-item list-group-item-action"> Nome do administrador </a>
+                                    <a href="#" class="list-group-item list-group-item-action"> Nome do administrador </a>
+                                </ul>
+                            </div>
+                            <a class="btn btn-block color3 text-white my-1" href="#user_collapse" data-toggle="collapse" aria-expanded="false" aria-controls="user_collapse">
+                                Usuários ativos
+                            </a>
+                            <div class="collapse" id="user_collapse">
+                                <ul class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action"> Nome do usuário </a>
+                                    <a href="#" class="list-group-item list-group-item-action"> Nome do usuário </a>
+                                    <a href="#" class="list-group-item list-group-item-action"> Nome do usuário </a>
+                                </ul>
+                            </div>
+                            <a class="btn btn-block color3 text-white my-1" href="#disabled_user_collapse" data-toggle="collapse" aria-expanded="false" aria-controls="disabled_user_collapse">
+                                Usuários desativados
+                            </a>
+                            <div class="collapse" id="disabled_user_collapse">
+                                <ul class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action"> Nome do usuário </a>
+                                    <a href="#" class="list-group-item list-group-item-action"> Nome do usuário </a>
+                                    <a href="#" class="list-group-item list-group-item-action"> Nome do usuário </a>
+                                </ul>
+                            </div>
+                            <a class="btn btn-block color3 text-white my-1" href="#register_collapse" data-toggle="collapse" aria-expanded="false" aria-controls="register_collapse">
+                                Cadastros a serem confirmados
+                            </a>
+                            <div class="collapse" id="register_collapse">
+                                <ul class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action"> Cadastro a ser confirmado </a>
+                                    <a href="#" class="list-group-item list-group-item-action"> Cadastro a ser confirmado </a>
+                                    <a href="#" class="list-group-item list-group-item-action"> Cadastro a ser confirmado </a>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Lista de animais para adoção -->
+                        <div class="my-5">
+                            <h3> Lista de animais cadastrados </h3>
+                            <hr>
+                            <a class="btn btn-block color3 text-white my-1" href="#animals_to_be_adopted_collapse" data-toggle="collapse" aria-expanded="false" aria-controls="admin_collapse">
+                                Animais para adoção
+                            </a>
+                            <div class="collapse" id="animals_to_be_adopted_collapse">
+                                <ul class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action"> Título do animal </a>
+                                    <a href="#" class="list-group-item list-group-item-action"> Título do animal </a>
+                                    <a href="#" class="list-group-item list-group-item-action"> Título do animal </a>
+                                </ul>
+                            </div>
+                            <a class="btn btn-block color3 text-white my-1" href="#adopted_animals_collapse" data-toggle="collapse" aria-expanded="false" aria-controls="admin_collapse">
+                                Animais adotados
+                            </a>
+                            <div class="collapse" id="adopted_animals_collapse">
+                                <ul class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action"> Título do animal </a>
+                                    <a href="#" class="list-group-item list-group-item-action"> Título do animal </a>
+                                    <a href="#" class="list-group-item list-group-item-action"> Título do animal </a>
+                                </ul>
+                            </div>
+                            <a class="btn btn-block color3 text-white my-1" href="#hidden_animals_collapse" data-toggle="collapse" aria-expanded="false" aria-controls="admin_collapse">
+                                Animais ocultados
+                            </a>
+                            <div class="collapse" id="hidden_animals_collapse">
+                                <ul class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action"> Título do animal </a>
+                                    <a href="#" class="list-group-item list-group-item-action"> Título do animal </a>
+                                    <a href="#" class="list-group-item list-group-item-action"> Título do animal </a>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Lista de notícias cadastradas -->
+                        <div class="my-5">
+                            <h3> Lista de notícias cadastradas </h3>
+                            <hr>
+                            <a class="btn btn-block color3 text-white my-1" href="#news_collapse" data-toggle="collapse" aria-expanded="false" aria-controls="admin_collapse">
+                                Notícias visíveis
+                            </a>
+                            <div class="collapse" id="news_collapse">
+                                <ul class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between"> Título da notícia <small> DD/MM/AAAA </small> </a>
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between"> Título da notícia <small> DD/MM/AAAA </small> </a>
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between"> Título da notícia <small> DD/MM/AAAA </small> </a>
+                                </ul>
+                            </div>
+                            <a class="btn btn-block color3 text-white my-1" href="#hidden_news_collapse" data-toggle="collapse" aria-expanded="false" aria-controls="admin_collapse">
+                                Notícias ocultadas
+                            </a>
+                            <div class="collapse" id="hidden_news_collapse">
+                                <ul class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between"> Título da notícia <small> DD/MM/AAAA </small> </a>
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between"> Título da notícia <small> DD/MM/AAAA </small> </a>
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between"> Título da notícia <small> DD/MM/AAAA </small> </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</body>
+</html>
